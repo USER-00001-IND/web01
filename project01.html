@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System - C++ Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            background-color: #f4f4f4;
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📘 Library Management System (C++ Project)</h1>
+
+    <div class="section">
+        <h2>👨‍💻 Project Overview</h2>
+        <p>
+            This is a simple command-line based <strong>Library Management System</strong> written in C++. 
+            It allows users to <strong>add</strong>, <strong>view</strong>, <strong>search</strong>, and <strong>delete</strong> books. 
+            All data is stored in a file called <code>library.txt</code>, which acts as the system's database.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>⚙️ Working Mechanism</h2>
+        <ul>
+            <li><strong>Data Structure:</strong> Uses a <code>struct Book</code> to store book information: ID, title, and author.</li>
+            <li><strong>File Handling:</strong> Book data is stored in a text file using <code>ofstream</code> and <code>ifstream</code>.</li>
+            <li><strong>Delimiter:</strong> Book fields are separated by the <code>|</code> character for easy parsing.</li>
+            <li><strong>Functions:</strong>
+                <ul>
+                    <li><code>addBook()</code> – Adds a new book to the file (after checking for duplicate IDs).</li>
+                    <li><code>displayBooks()</code> – Reads and displays all books from the file.</li>
+                    <li><code>searchBook()</code> – Searches for a book by ID.</li>
+                    <li><code>deleteBook()</code> – Deletes a book by ID by copying all other books to a temporary file.</li>
+                </ul>
+            </li>
+            <li><strong>Main Menu:</strong> A loop in <code>main()</code> displays options for user interaction.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📂 File Structure</h2>
+        <p>Each line in <code>library.txt</code> contains a book in this format:</p>
+        <pre><code>101|The Great Gatsby|F. Scott Fitzgerald</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>🔐 Input Validation</h2>
+        <p>
+            The program checks for:
+            <ul>
+                <li>Non-numeric IDs</li>
+                <li>Duplicate book IDs</li>
+                <li>Empty files when displaying books</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Features</h2>
+        <ul>
+            <li>Simple and user-friendly interface</li>
+            <li>Persistent file-based storage</li>
+            <li>Easy to modify and extend (e.g., edit books, sort list)</li>
+            <li>Basic error handling for invalid input</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🧠 Future Improvements</h2>
+        <ul>
+            <li>Use classes (OOP) instead of structs</li>
+            <li>Integrate with a database like SQLite</li>
+            <li>Convert into a GUI application using Qt</li>
+            <li>Build a web version using your web development skills</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📌 Technologies Used</h2>
+        <ul>
+            <li><strong>C++</strong> – Core logic and file handling</li>
+            <li><strong>Text Files</strong> – Acts as the database</li>
+            <li><strong>Command-Line Interface (CLI)</strong> – User input/output</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🙋 About the Developer</h2>
+        <p>
+            Developed by <strong>Rajmohan Hazowary</strong>, B.Sc. 3rd Semester, Computer Science Student at <strong>PDUAM, Amjonga</strong>.
+            <a href=""> <strong>View Source Code</strong></a>
+        </p>
+    </div>
+
+</body>
+</html>
