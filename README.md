@@ -48,6 +48,6 @@ This is a simple, responsive personal portfolio website built using HTML and CSS
 3. Customize the content and styling to fit your needs.
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio
+(https://github.com/USER-00001-IND/web01.git)
+cd web01
 start index.html
