@@ -40,6 +40,8 @@ This is a simple, responsive personal portfolio website built using HTML and CSS
 
 - HTML5
 - CSS3
+- JavaScript
+- 
 
 ## 🚀 Getting Started
 
